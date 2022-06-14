@@ -1,13 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Hello GitHub</h1>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="icon" href="assets/img/favicon/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav header__nav">
+        <ul class="header__list list-reset">
+          <li class="header__item">
+            <a class="list__link header__link" href="#contacts">Contacts</a>
+          </li>
+          <li class=" header__item">
+            <a class="list__link header__link" href="#summary">Summary</a>
+          </li>
+          <li class="header__item">
+            <a class="list__link header__link" href="#skills">Skills</a>
+          </li>
+          <li class="header__item">
+            <a class="list__link header__link" href="#education">Education</a>
+          </li>
+          <li class="header__item">
+            <a class="list__link header__link" href="#projects">Projects</a>
+          </li>
+          <li class="header__item">
+            <a class="list__link header__link" href="#reviews">Reviews</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+	</header>
+  <main class="main">
+    <div class="container main-container">
+      <section class="section introduce">
+        <img class="introduce__logo" src="assets/img/me.jpeg" alt="Vitaliy Tarassov" width="400" height="500">
+        <div class="introduce__content">
+          <h1 class="main-title">Vitaliy Tarassov</h1>
+          <p class="introduce__descr">
+            Front-end developer trainee
+          </p>
+        </div>
+      </section>
+      <section class="section contacts" id="contacts">
+        <h2 class="section-title">Contacts</h2>
+        <ul class="list contacts__list list-reset flex">
+          <li class="list__item contacts__item list__item--github">
+            <a class="list__link contacts__link" href="https://github.com/ApxuVit" title="GitHub">
+              ApxuVit				
+            </a>
+          </li>
+          <li class="list__item contacts__item list__item--discord">
+            <a class="list__link contacts__link" href="https://discord.gg/zUr7wWYPXE" title="Discord">
+              ApxuVit#3498 						
+            </a>
+          </li>
+          <li class="list__item contacts__item list__item--gmail">
+            <a class="list__link contacts__link" href="mailto:apxustudio@mail.com" title="E-Mail">
+              apxustudio@gmail.com
+            </a>
+          </li>
+          <li class="list__item contacts__item list__item--phone">
+            <a class="list__link contacts__link" href="tel:+77001909093" title="Phone-number">
+              +7(700)-190-90-93
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="section summary" id="summary">
+        <h2 class="section-title">Summary</h2>
+        <p class="summary__descr">
+          I am 29 years old. First and foremost I want to figure out who I am. Unfortunately, I have no experience in this field, but I am fast-learner and hard-working. My goal is to became the best fronted developer.
+        </p>
+        <div class="summary__wrapper">
+          <h3 class="summary__title">Languages</h3>
+          <ul class="list-reset summary__list">
+            <li class="summary__item"><span class="summary__decor">Russian:</span> Native Speaker </li>
+            <li class="summary__item"><span class="summary__decor">English:</span> Elementary with Google translate </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <ul class="list list-reset skills__list">
+          <li class="list__item list__item--html skills__item">
+            HTML
+          </li>
+          <li class="list__item list__item--css skills__item">
+            CSS
+          </li>
+          <li class="list__item list__item--js skills__item">
+            JavaScript
+          </li>
+          <li class="list__item list__item--react skills__item">
+            React
+          </li>
+          <li class="list__item list__item--figma skills__item">
+            Figma
+          </li>
+        </ul>
+      </section>
+      <section class="section education" id="education">
+        <h2 class="section-title">Education</h2>
+        <ul class="list list-reset education__list">
+          <li class="education__item">
+            №30 High School, Nur-Sultan, KZ. Graduated in 2009
+          </li>
+          <li class="education__item">
+            Libeeral arts college, Nur-Sultan, KZ. Graduated in 2014
+          </li>
+          <li class="education__item">
+            Fire safety system certificates:
+            <ul class="education__list--mt">
+              <li class="education__item">Bolid</li>
+              <li class="education__item">Rubezh</li>
+              <li class="education__item">Bosh</li>
+            </ul>
+          </li>
+          <li class="education__item">
+            Video surveillance system certificate:
+            <ul class="education__list--mt">
+              <li class="education__item">Hikvision</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="section projects" id="projects">
+        <div class="projects__content">
+          <h2 class="section-title">Code Example</h2>
+          <div class="projects__card" title="Code taken from CodeWars. This is my max at the moment.">
+            <pre class="projects__example">
+              function multiply(a, b){
+                return a * b
+              }
+            </pre>
+          </div>
+          <div class="projects__wrapper">
+            <h3 class="projects__title">My works</h3>
+            <ul class="list projects__list list-reset">
+              <li class="projects__item">
+                <a class="list__link projects__link" href="https://github.com/ApxuVit/rsschool-cv/tree/gh-pages">
+                  The first <span class="projects__decor">#cv</span>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a class="list__link projects__link" href="https://github.com/ApxuVit/rsschool-cv/tree/rsschool-cv-html">
+                  The second <span class="projects__decor">#cv</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section reviews">
+        <h2 class="section-title">Reviews</h2>
+        <div class="reviews__wrapper">
+          <div class="reviews__card">
+            <div class="reviwes__avatar" style="background-image: url('assets/img/user_1.jpeg');"></div>
+            <p class="reviews__descr">
+              Although there were some defects, the work was done neatly.
+            </p>
+          </div>
+          <div class="reviews__card">
+            <div class="reviwes__avatar" style="background-image: url('assets/img/user_2.jpeg');"></div>
+            <p class="reviews__descr">
+              The best apps developer, who met the deadline.
+            </p>
+          </div>
+          <div class="reviews__card">
+            <div class="reviwes__avatar" style="background-image: url('assets/img/user_3.jpeg');"></div>
+            <p class="reviews__descr">
+              A cool dude that is responsible and hard-working. I would definitely recommend my friends.
+            </p>
+          </div>
+          <div class="reviews__card">
+            <div class="reviwes__avatar" style="background-image: url('assets/img/user_4.jpeg');"></div>
+            <p class="reviews__descr">
+              The work was not done fully hence it was completed by another developer.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__content">
+        <time class="footer__date" datetime="2022-06-14">2022</time>
+        <a class="footer__link" href="https://github.com/ApxuVit">ApxuVit</a>
+      </div>
+      <p class="footer__descr">
+        everything written is fiction
+      </p>
+       <a class="footer__logo" href="https://rs.school/js/">
+        
+       </a>
+    </div>
+  </footer>
+</body>
 </html>
